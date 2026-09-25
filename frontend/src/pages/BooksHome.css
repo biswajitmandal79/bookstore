@@ -1,0 +1,21 @@
+.books-section { background: #0f1623; padding: 36px 24px 60px; min-height: 60vh; }
+.books-inner { max-width: 1280px; margin: 0 auto; }
+.books-toolbar { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.search-box { position: relative; display: flex; align-items: center; flex: 1; min-width: 240px; background: #1a1f2e; border: 1px solid #2d3748; border-radius: 12px; padding: 0 14px; gap: 10px; }
+.search-box svg { color: #6b7280; flex-shrink: 0; }
+.search-input { flex: 1; background: none; border: none; outline: none; color: #f9fafb; font-size: 14px; padding: 12px 0; font-family: inherit; }
+.search-input::placeholder { color: #4b5563; }
+.search-clear { background: none; border: none; color: #6b7280; cursor: pointer; font-size: 13px; padding: 4px; }
+.search-clear:hover { color: #f9fafb; }
+.books-result-count { font-size: 13px; color: #6b7280; white-space: nowrap; }
+.category-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
+.cat-tab { padding: 8px 16px; background: rgba(255,255,255,0.04); border: 1px solid #2d3748; border-radius: 20px; color: #9ca3af; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.15s; font-family: inherit; white-space: nowrap; }
+.cat-tab:hover { background: rgba(255,255,255,0.08); color: #f9fafb; }
+.cat-tab.active { background: #6366f1; border-color: #6366f1; color: #fff; font-weight: 600; }
+.books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+.books-loading, .books-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 280px; gap: 12px; color: #6b7280; text-align: center; }
+.books-loading p, .books-empty p { font-size: 16px; font-weight: 600; color: #f9fafb; margin: 0; }
+.books-empty span:first-child { font-size: 48px; }
+.books-empty span:last-child { font-size: 13px; }
+.spinner { width: 36px; height: 36px; border: 3px solid #2d3748; border-top-color: #6366f1; border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }

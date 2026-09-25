@@ -1,0 +1,151 @@
+.order-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: #1a1f2e;
+  border: 1px solid #2d3748;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #2d3748;
+  background: rgba(99, 102, 241, 0.04);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.order-id {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f9fafb;
+  margin-right: 12px;
+}
+
+.order-date {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.order-header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.order-status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order-status--confirmed,
+.order-status--completed {
+  background: rgba(52, 211, 153, 0.1);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.order-status--in-transit {
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.order-total {
+  font-size: 17px;
+  font-weight: 800;
+  color: #f9fafb;
+}
+
+.order-items {
+  list-style: none;
+  padding: 16px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.order-item-img {
+  width: 48px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.order-item-info { flex: 1; min-width: 0; }
+
+.order-item-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f9fafb;
+  margin: 0 0 2px;
+}
+
+.order-item-author {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0 0 6px;
+}
+
+.order-item-category {
+  display: inline-block;
+  padding: 2px 7px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 5px;
+  font-size: 11px;
+  color: #a5b4fc;
+  font-weight: 500;
+}
+
+.order-item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+.order-item-qty {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.order-card-footer {
+  padding: 12px 20px;
+  border-top: 1px solid #2d3748;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.order-delivery-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.order-delivery-info strong { color: #818cf8; }
